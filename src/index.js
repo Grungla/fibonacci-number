@@ -1,12 +1,3 @@
-import "./styles.css";
-
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use Parcel to bundle this sandbox, you can find more info about Parcel
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
 //Finding nth Fibonacci number
 //Navie Recursive Approach
 function fib(n) {
@@ -16,8 +7,6 @@ function fib(n) {
     return fib(n - 1) + fib(n - 2);
   }
 }
-
-// console.log(fib(11));
 
 //Dynamic Programming Solution
 //assuming n > 2
@@ -31,3 +20,5 @@ function fib_dp(n) {
   }
   return seq[n - 1];
 }
+
+console.log(fib_dp(6));
